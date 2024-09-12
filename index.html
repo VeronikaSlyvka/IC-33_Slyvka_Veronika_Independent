@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Стиль для заголовка */
+        h1 {
+            position: fixed;
+            top: 0; /* Підняти нижче панелі навігації */
+            width: 100%;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            background-color: #ffffff; /* Фон щоб не перекривати текст */
+            z-index: 999;
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        /* Стиль для меню */
+        .menu-container ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #216767;
+            position: fixed;
+            top: 50px; /* Панель знаходиться зверху */
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .menu-container li {
+            float: left;
+        }
+
+        .menu-container li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .menu-container li a:hover {
+            background-color: #0a3737;
+        }
+
+        /* Стиль для контенту щоб він не перекривався фіксованими елементами */
+        .content {
+            margin-top: 85px; /* Відступ після меню і заголовка */
+        }
+
+        /* Додаткові стилі для решти елементів */
+        h3 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        ol {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding-left: 40px;
+        }
+
+        ol li {
+            margin-bottom: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #D6EEEE;
+        }
+    </style>
+           
+</head>
+<body>
+
+    <h1 >Самостійна робота Сливка Вероніка ІС-33</h1>
+  
+    <div class="menu-container">
+        <ul >
+            <li><a href="#home">Home</a></li>
+            <li><a href="#info">Info</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+       
+    </div>
+   
+   <p id="home" style="color: white;">.</p>
+
+   <div class="content">  <h3 title="Я виринаюча підказка"> Заголовок</h3> </div>
+   <p>Новий параграф<br>який обривається</p>
+
+    <p> <img src="https://eimg.pravda.com/images/doc/d/6/d640192-kpi.jpg" alt="Тут мало бути фото" height="400"> </p>
+    <p style="color:rgb(255, 0, 132); width: 250px; border: 2px solid rgb(218, 123, 182);">Це параграф рожевого кольору.</p>
+    <button style="color: rgb(255, 255, 255);background-color: rgb(12, 26, 106); border: 3px solid rgb(77, 108, 219); padding: 15px;"> Кнопка </button>
+
+
+    <h3>Список студентів</h3>
+    <ul>
+        <li>Петренко</li>
+        <li>Вакаров</li>
+        <li>Яцків</li>
+    </ul>
+
+    <h3>Розклад пар</h3>
+    <ol>
+       <li>Програмування</li>
+       <li>Англійська</li>
+       <li>Математика</li>
+    </ol>
+
+    <pre>
+        Цей елемент    зберігає        
+        форматований                 текст.
+    </pre>
+
+    <h3>Тисни на картинку, щоб відкрити посилання цього сайту</h3>
+    <a href="http://127.0.0.1:5500/index.html" target="_blank" title="Тисни"> 
+        <img src="https://inside-ua.com/files/originals/kpi-im-ihoria-sikorskoho-1.webp" width="100" height="100" alt="тут мала бути картинка">
+    </a>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #D6EEEE;
+        }
+    </style>
+
+    <table id="info">
+        <caption>Інформація про студентів</caption>
+        <tr>
+            <th style="width: 25%;"> Ім'я</th>
+            <th style="width: 25%;"> Прізвище</th>
+            <th style="width: 50%;"> Номер телефона </th>
+        </tr>
+        <tr>
+            <td> Петро</td>
+            <td> Петренко</td>
+            <td>0956452568</td>
+        </tr>
+        <tr>
+            <td>Макар </td>
+            <td>Вакаров</td>
+            <td>0659854562</td>
+        </tr>
+        <tr>
+            <td>Михайло</td>
+            <td>Яцків</td>
+            <td>0546895466</td>
+        </tr>
+    </table>
+
+</body>
+</html>
