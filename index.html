@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* Стиль для заголовка */
+      
         h1 {
             position: fixed;
-            top: 0; /* Підняти нижче панелі навігації */
+            top: 0; 
             width: 100%;
             text-align: center;
             color: rgb(0, 0, 0);
-            background-color: #ffffff; /* Фон щоб не перекривати текст */
+            background-color: #ffffff;
             z-index: 999;
             padding: 10px 0;
             margin: 0;
         }
 
-        /* Стиль для меню */
+     
         .menu-container ul {
             list-style-type: none;
             margin: 0;
@@ -26,7 +26,7 @@
             overflow: hidden;
             background-color: #216767;
             position: fixed;
-            top: 50px; /* Панель знаходиться зверху */
+            top: 50px; 
             width: 100%;
             z-index: 1000;
         }
@@ -47,12 +47,12 @@
             background-color: #0a3737;
         }
 
-        /* Стиль для контенту щоб він не перекривався фіксованими елементами */
+        
         .content {
-            margin-top: 85px; /* Відступ після меню і заголовка */
+            margin-top: 85px; 
         }
 
-        /* Додаткові стилі для решти елементів */
+    
         h3 {
             margin-top: 30px;
             margin-bottom: 10px;
@@ -164,6 +164,22 @@
             <td>0546895466</td>
         </tr>
     </table>
+<p></p>
+    <form >
+        <fieldset>
+            <legend>Особиста інформація:</legend>
+        Ім'я: <br>
+        <input type="text" name="firstName"> <p></p>
+        Прізвище: <br>
+        <input type="text" name="lastName"> <p></p>
+        Група: <br>
+        <input type="radio" name="group" value="IC-31"> ІС-31
+        <input type="radio" name="group" value="IC-32"> ІС-32
+        <input type="radio" name="group" value="IC-33"> ІС-33
+        <input type="radio" name="group" value="IC-34"> ІС-34 <p></p>
+        <input type="submit" value="Відправити">
+    </fieldset>
+    </form>
 
 </body>
 </html>
